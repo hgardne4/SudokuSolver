@@ -115,6 +115,7 @@ int main() {
 	solve(grid);
 	auto stop = high_resolution_clock::now();
 	auto duration = duration_cast<milliseconds>(stop - start);
+	// output time of completion
 	cout << "This puzzle took ~" << (float)duration.count()/(float)1000 << " seconds to complete.\n";
 	return 0;
 }
